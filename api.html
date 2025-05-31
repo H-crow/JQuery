@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>API</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="api-page">
+  <nav>
+    <ul>
+      <li><a href="index.html">Salário</a></li>
+      <li><a href="api.html">API</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Exemplo de API Pública (Chuck Norris Jokes)</h2>
+    <button id="btnApi">Buscar Piada</button>
+    <p id="resultado"></p>
+  </div>
+
+  <script>
+    document.getElementById("btnApi").addEventListener("click", async () => {
+      const resposta = await fetch("https://api.chucknorris.io/jokes/random");
+      const dados = await resposta.json();
+      document.getElementById("resultado").innerText = dados.value;
+    });
+  </script>
+</body>
+</html>

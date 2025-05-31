@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Calculadora de Salário</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Salário</a></li>
+      <li><a href="api.html">API</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Calculadora de Salário</h2>
+    <form id="salaryForm">
+      <input type="text" placeholder="Nome" id="nome" required />
+      <input type="number" placeholder="Idade" id="idade" required />
+      <input type="number" placeholder="Salário Bruto" step="0.5" id="salario" required />
+      <input type="number" placeholder="Número de Dependentes" id="dependentes" required />
+      <button type="submit">Calcular</button>
+    </form>
+  </div>
+
+  <script src="salario.js"></script>
+</body>
+</html>
